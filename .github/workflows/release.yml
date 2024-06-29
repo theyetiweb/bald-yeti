@@ -33,7 +33,7 @@ jobs:
           command: install
 
       - name: manual zip - necessary to create the propper container
-        run: cd .. && zip -r ${{ env.ZIP_FILE_NAME}} ${{ env.PLUGIN_SLUG}}/ -x@bald-yeti/.deployignore
+        run: rm DOCKER_ENV && rm docker_tag && rm output.log && cd .. && zip -r ${{ env.ZIP_FILE_NAME}} ${{ env.PLUGIN_SLUG}}/ -x@bald-yeti/.deployignore
 
       - name: move the zip
         run: mkdir build && cd .. && mv ${{ env.ZIP_FILE_NAME}} ${{ env.PLUGIN_SLUG}}/build/${{ env.ZIP_FILE_NAME}}

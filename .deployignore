@@ -7,3 +7,4 @@ src
 docker_tag
 DOCKER_ENV
 Dockerfile-php-build
+*.log
