@@ -1,14 +1,10 @@
 # Bald Yeti Theme
 
-<div style="display:flex; gap: 8px;">
-
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ![Version](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Ftheyetiweb%2Fbald-yeti%2Fmain%2Fpackage.json&query=%24.version&style=flat&label=Version)
 
 [![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Ftheyetiweb%2Fbald-yeti%2Fmain%2Fpackage.json&query=%24.version&prefix=v&style=flat&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyBzdHJva2U9IiNmZmZmZmYiIGZpbGw9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI%2BPHBhdGggZD0iTTIyNCwxNDR2NjRhOCw4LDAsMCwxLTgsOEg0MGE4LDgsMCwwLDEtOC04VjE0NGE4LDgsMCwwLDEsMTYsMHY1NkgyMDhWMTQ0YTgsOCwwLDAsMSwxNiwwWm0tMTAxLjY2LDUuNjZhOCw4LDAsMCwwLDExLjMyLDBsNDAtNDBBOCw4LDAsMCwwLDE2OCw5NkgxMzZWMzJhOCw4LDAsMCwwLTE2LDBWOTZIODhhOCw4LDAsMCwwLTUuNjYsMTMuNjZaIj48L3BhdGg%2BPC9zdmc%2B&logoSize=auto&label=Download&color=%2328BAE0)](https://github.com/theyetiweb/bald-yeti/releases/latest/download/bald-yeti.zip)
-
-</div>
 
 ![Bald Yeti Theme logo](./assets/images/baldyeti-light.png#gh-dark-mode-only)
 ![Bald Yeti Theme logo](./assets/images/baldyeti.png#gh-light-mode-only)
