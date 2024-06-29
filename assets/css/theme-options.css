@@ -1,0 +1,246 @@
+/* 
+ * Theme Options
+ */
+ #carbon_fields_container_bald_yeti_options,
+ #carbon_fields_container_page_editor {
+   background: transparent;
+   border: none;
+ }
+ #carbon_fields_container_bald_yeti_options .cf-container .cf-field {
+  border: none;
+ }
+ #theme-options-form #carbon_fields_container_page_editor .cf-html__content,
+ #theme-options-form #carbon_fields_container_allowed_blocks .cf-html__content,
+ #theme-options-form #carbon_fields_container_landing_pages .cf-html__content {
+   position: relative;
+   padding-left: 60px;
+ }
+ #theme-options-form .cf-container .cf-field {
+   border-width: 1px 1px 0 1px;
+   padding: 1rem;
+ }
+ 
+ #theme-options-form .cf-html__content > svg {
+   position: absolute;
+   left: 0;
+   top: 50%;
+   width: 42px;
+   transform: translateY(-50%);
+ }
+ #carbon_fields_container_bald_yeti_options .cf-container__tabs {
+   background: transparent;
+ }
+ .cf-container-carbon_fields_container_bald_yeti_options .cf-container__fields {
+   padding: 2rem;
+ }
+ .cf-container-carbon_fields_container_bald_yeti_options .button-group {
+   max-width: 100%;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr;
+   gap: 0;
+ }
+ .cf-container-carbon_fields_container_bald_yeti_options .button-group .button.button-hero {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding: 1rem;
+   text-align: center;
+   text-wrap: wrap;
+ }
+ .cf-container-carbon_fields_container_bald_yeti_options .button svg {
+   width: 64px;
+   display: inline-block;
+   fill: #3c434a;
+   transition: all 150ms ease-in-out;
+ }
+ .cf-container-carbon_fields_container_bald_yeti_options .button:hover svg {
+   fill: #2271b1;
+   fill: #fff;
+ }
+ .cf-container-carbon_fields_container_bald_yeti_options .button-group p {
+   color: #3c434a;
+   margin: 0 auto;
+   text-wrap: balance;
+ }
+ .cf-container-carbon_fields_container_bald_yeti_options .button {
+   transition: all 150ms ease-in-out;
+ }
+ .cf-container-carbon_fields_container_bald_yeti_options .button:hover {
+   background: #2271b1;
+   color: #fff;
+ }
+ .cf-container-carbon_fields_container_bald_yeti_options .button:hover p,
+ .cf-container-carbon_fields_container_bald_yeti_options .button:hover strong {
+   color: #fff;
+   transition: all 150ms ease-in-out;
+ }
+ .cf-container-carbon_fields_container_bald_yeti_options.cf-container .cf-field {
+   border: none;
+ }
+ 
+ /* 
+  * Admin Options Fields
+  */
+ .cf-field.cf-set.toggle-set .cf-field__body {
+   container-type: inline-size;
+   container-name: bald-yeti-toggles;
+ }
+ .cf-field.cf-set.toggle-set .cf-set__label {
+   cursor: pointer;
+ }
+ @container bald-yeti-toggles (min-width: 0) {
+   .cf-set__list {
+     display: grid;
+     grid-template-columns: 1fr;
+     gap: 1rem;
+   }
+   .cf-set__list-item {
+     margin: 0;
+   }
+ }
+ @container bald-yeti-toggles (min-width: 500px) {
+   .cf-set__list {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+   }
+ }
+ @container bald-yeti-toggles (min-width: 800px) {
+   .cf-set__list {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+   }
+ }
+ 
+ /* Headlines  */
+ .postbox.carbon-box:not(#carbon_fields_container_bald_yeti_options) .cf-field.cf-html {
+   background: #f6f7f7;
+ }
+ #poststuff .cf-field.cf-html h2 {
+   font-size: revert;
+   padding: revert;
+   line-height: revert;
+ }
+ 
+ .cf-container .cf-field + .cf-field.cf-html:not(:first-child) {
+   border-top: 1px solid #e2e4e7;
+ }
+ 
+ .cf-set.toggle-set li.cf-set__list-item,
+ .cf-checkbox.toggle .cf-field__body {
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+ }
+ 
+ .cf-set.toggle-set li.cf-set__list-item input,
+ .cf-checkbox.toggle input {
+   height: 0;
+   width: 0;
+   visibility: hidden;
+   position: absolute;
+ }
+ 
+ .cf-set.toggle-set li.cf-set__list-item label,
+ .cf-checkbox.toggle label {
+   position: relative;
+   display: flex;
+   align-items: center;
+   gap: 8px;
+   transition: color 100ms linear;
+ }
+ 
+ .cf-set.toggle-set li.cf-set__list-item label:before,
+ .cf-checkbox.toggle label:before {
+   content: '';
+   cursor: pointer;
+   width: 40px;
+   height: 20px;
+   background: #a8a8a8;
+   display: inline-block;
+   border-radius: 100px;
+ }
+ 
+ .cf-set.toggle-set li.cf-set__list-item label:after,
+ .cf-checkbox.toggle label:after {
+   content: '';
+   position: absolute;
+   left: 5px;
+   width: 15px;
+   height: 15px;
+   background: #fff;
+   border-radius: 15px;
+   transition: 0.3s;
+   top: 50%;
+   transform: translateY(-50%);
+ }
+ 
+ .cf-set.toggle-set li.cf-set__list-item input:checked + label:before,
+ .cf-checkbox.toggle input:checked + label:before {
+   background: #2271b1;
+ }
+ 
+ .cf-set.toggle-set li.cf-set__list-item label:focus-visible,
+ .cf-set.toggle-set li.cf-set__list-item label:hover,
+ .cf-set.toggle-set li.cf-set__list-item input:checked + label {
+   color: #3c434a;
+ }
+ 
+ .cf-set.toggle-set li.cf-set__list-item input:checked + label:after,
+ .cf-checkbox.toggle input:checked + label:after {
+   left: 20px;
+ }
+ 
+ /* Tooltips */
+ .cf-set.toggle-set.block-toggles {
+   z-index: 10;
+ }
+ .cf-set.toggle-set.embed-variant-toggles {
+   z-index: 1;
+ }
+ .cf-set.toggle-set .cf-set__label {
+   position: relative;
+   width: 100%;
+ }
+ 
+ .cf-set.toggle-set .cf-set__label .tooltip {
+   pointer-events: none;
+   position: absolute;
+   display: none;
+   background: #fff;
+   border: 1px solid #c3c4c7;
+   cursor: pointer;
+   z-index: 99;
+   width: 100%;
+   top: calc(100% + 8px);
+   left: 48px;
+ }
+ .cf-set.toggle-set .cf-set__label:hover .tooltip {
+   display: block;
+ }
+ .cf-set.toggle-set .cf-set__label .tooltip header {
+   display: flex;
+   align-items: center;
+   gap: .5rem;
+   padding: .5rem;
+   background: #f6f7f7;
+ }
+ .cf-set.toggle-set .cf-set__label > span.icon i,
+ .cf-set.toggle-set .cf-set__label > span.icon svg {
+   width: 24px;
+   height: 24px;
+ }
+ .cf-set.toggle-set .cf-set__label .tooltip header i,
+ .cf-set.toggle-set .cf-set__label .tooltip header .icon svg {
+   width: 36px;
+   height: 36px;
+ }
+ .cf-set.toggle-set .cf-set__label .tooltip header h4 {
+   font-size: 1.2em;
+   margin: 0;
+ }
+ .cf-set.toggle-set .cf-set__label .tooltip p {
+   padding: .5rem;
+   margin: 0;
+ }

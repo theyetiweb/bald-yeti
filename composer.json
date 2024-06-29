@@ -1,0 +1,21 @@
+{
+    "name": "yetiweb/bald-yeti",
+    "version": "1.0.0",
+    "description": "The Bald Yeti theme is purpose-built for Headless WordPress websites. It is intended to be used in conjunction with a separate front-end application and does not contain any front-end assets.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yeti Web, LLC",
+            "email": "contact@yetiweb.io"
+        }
+    ],
+    "require": {
+        "htmlburger/carbon-fields": "^3.6"
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true
+        }
+    }
+}

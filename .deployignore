@@ -1,0 +1,7 @@
+.*
+node_modules/*
+README.md
+LICENSE.md
+package.json
+package-lock.json
+src

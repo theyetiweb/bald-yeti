@@ -1,0 +1,48 @@
+name: New Release
+
+env:
+  ZIP_FILE_NAME: bald-yeti.zip
+  PLUGIN_SLUG: bald-yeti
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  build-release:
+    name: Build and Upload Release Asset
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Get the tag name
+        run: echo "TAG=${GITHUB_REF/refs\/tags\//}" >> $GITHUB_ENV
+
+      - name: New Release Branch
+        uses: peterjgrainger/action-create-branch@v2.4.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          branch: '${{ env.TAG }}'
+
+      - name: Use Composer
+        uses: php-actions/composer@v6
+        with:
+          command: install
+
+      - name: manual zip - necessary to create the propper container
+        run: cd .. && zip -r ${{ env.ZIP_FILE_NAME}} ${{ env.PLUGIN_SLUG}}/ -x@bald-yeti/.deployignore
+
+      - name: move the zip
+        run: mkdir build && cd .. && mv ${{ env.ZIP_FILE_NAME}} ${{ env.PLUGIN_SLUG}}/build/${{ env.ZIP_FILE_NAME}}
+
+      - name: Upload files to current release
+        uses: svenstaro/upload-release-action@2.5.0
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: ../${{ env.PLUGIN_SLUG}}/build/${{ env.ZIP_FILE_NAME}}
+          asset_name: ${{ env.ZIP_FILE_NAME}}
+          tag: ${{ github.ref }}
+          overwrite: true
